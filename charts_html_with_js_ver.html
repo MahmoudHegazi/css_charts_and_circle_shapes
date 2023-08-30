@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("p:not(.intro)").css("background-color", "yellow");
+});
+</script>
+<style>
+/* as it simple very simple, you deal with 4 quarters and make small calc by brain eg: if u need 50% so you must set two sqaures full height any side needed ez */
+#quarter_one {
+  height: 0%;
+  background:white !important;
+}
+#quarter_two {
+  height: 0;
+  background:white !important;
+}
+#quarter_three {
+  height: 0%;
+  background:white !important;
+}
+#quarter_four {
+  height: 0;
+  background:white !important;
+}
+</style>
+</head>
+<body style="">
+<div id="scont" style="width:100px;height:100px;position:relative;text-align:center;margin-left:10%;margin-top:10%;">
+<div style="width:70%;height:70%;border:15px solid lightblue;border-radius:50%;">
+<div  class="left_quarter" id="quarter_one" style="z-index:9;width:50%;left:0%;bottom:50%;position:absolute;"></div>
+
+<div  class="right_quarter" id="quarter_two" style="position:absolute;d black;z-index:9;width:50%;left:50%;bottom:50%;position:absolute;"></div>
+
+<div  class="right_quarter" id="quarter_three" style="z-index:9;width:50%;left:0%;top:50%;position:absolute;"></div>
+
+<div  class="left_quarter" id="quarter_four" style="z-index:9;width:50%;left:50%;top:50%;position:absolute;"></div>
+
+<span style="position:abosulte;left:50%;top:50%;z-index:100!important;color:black;position: absolute;left: 40%;top: 40%;z-index: 100!important; color: black;">50%</span>
+</div>
+
+
+</div>
+<script>
+
+$("#quarter_four").animate({height: '100%'}, cb=()=>{alert("hello");})
+function precetangeToHTML(precetange=100, hideXFrom='right', hideYFrom='top'){
+  const hidex_class = (hideXFrom == 'left') ? '.left_quarter' : '.right_quarter';
+  
+    const hideyBottom = (hideYFrom == 'bottom') ? 'bottom' : 'top';
+    
+  switch (x){
+  }
+}
+</script>
+</body>
+</html>
